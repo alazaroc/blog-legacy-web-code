@@ -1,28 +1,36 @@
-# blog-legacy-web-code (legacy)
+# blog-legacy-web-code (archived)
 
-> **This is the legacy source code for [playingaws.com](https://www.playingaws.com).**
+> **This is the original source code for [playingaws.com](https://www.playingaws.com), an AWS-focused technical blog.**
 >
-> The blog has been migrated to a new private codebase. This repository is kept for historical reference and is no longer actively maintained.
+> The blog has been migrated to a new private codebase. This repository is kept for historical reference and is no longer actively maintained. No new posts or features will be added here.
 >
-> The legacy version of the blog is still accessible at: **[d3oyszvjcdgtwm.cloudfront.net](https://d3oyszvjcdgtwm.cloudfront.net)**
+> The archived version is still accessible at: **[d3oyszvjcdgtwm.cloudfront.net](https://d3oyszvjcdgtwm.cloudfront.net)**
 
 ---
 
-## What this project does
+## About this project
 
-Jekyll source code for the original Playing AWS blog:
+This repository contains the Jekyll source code used to build and run the Playing AWS blog from its launch until the migration to a new private codebase.
 
-- **Jekyll + Chirpy theme** — static site generator with responsive design and SEO optimization
-- **Posts** in `_posts/` written in Markdown
-- **Layouts and includes** in `_layouts/` and `_includes/`
-- **Assets** — CSS, JavaScript, and images in `assets/`
-- **Google Analytics** and **Giscus** comments integration
+**Stack:**
 
-Build with `bundle exec jekyll build` and serve locally with `bundle exec jekyll serve`.
+- **Jekyll** with the [Chirpy theme](https://github.com/cotes2333/jekyll-theme-chirpy) — static site generator
+- **Multi-language** — posts in both English and Spanish (`_posts/en/`, `_posts/es/`)
+- **AWS backend** — contact and feedback forms backed by AWS Lambda, Step Functions, and SES
+- **Google Analytics** and **Giscus** for comments
 
-## New infrastructure
+## Run it locally
 
-The current blog runs on a new private codebase. If you want to interact with the blog — report bugs, suggest features or content, or start a discussion — use the public community repository:
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+The site will be available at `http://localhost:4000`.
+
+## Want to interact with the current blog?
+
+The live blog is at **[playingaws.com](https://www.playingaws.com)**. To report a bug, suggest content, or start a discussion, use the public community repository:
 
 **[github.com/alazaroc/blog-web-code-community](https://github.com/alazaroc/blog-web-code-community)**
 
@@ -31,12 +39,4 @@ There you can:
 - 🐛 **Report a bug** — something broken or behaving unexpectedly on the blog
 - 💡 **Request a feature** — UX improvements, new sections, accessibility, performance
 - 📝 **Request content** — a topic, an AWS service deep-dive, or a tutorial series
-- 💬 **Start a discussion** — general AWS questions, feedback, or comments on a post (also available via the Giscus widget at the bottom of each article)
-
-## Related repositories
-
-| Repository | Description |
-| --- | --- |
-| [blog-legacy-frontend-infrastructure](https://github.com/alazaroc/blog-legacy-frontend-infrastructure) | AWS infrastructure for the legacy blog (public) |
-| [blog-legacy-frontend-infrastructure-pipeline](https://github.com/alazaroc/blog-legacy-frontend-infrastructure-pipeline) | CI/CD pipeline for the legacy infrastructure (public) |
-| [blog-web-code-community](https://github.com/alazaroc/blog-web-code-community) | Community hub: bugs, features, discussions (public) |
+- 💬 **Start a discussion** — general AWS questions, feedback, or comments on a post
